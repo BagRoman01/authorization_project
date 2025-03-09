@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.menuButton {
+  margin-right: 8px;
+}
+
+.title {
+  flex-grow: 1;
+  font-weight: bold;
+  display: flex;
+  color: #ffffff; /* Белый цвет текста для контраста */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Легкая тень для объема */
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 16px; /* Space between buttons */
+}
+
+@media (max-width: 300px) {
+  .title {
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
+  }
+
+  .buttonGroup {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+    gap: 12px;
+    margin-top: 20px; /* Space between buttons */
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
